@@ -46,6 +46,8 @@ const getMessages = async function() {
     response.forEach(item=> {
         render(item)
     })
+    div.scrollTop = div.scrollHeight
 }
 
 getMessages()
+
