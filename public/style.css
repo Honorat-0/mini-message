@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 *{
     box-sizing: border-box;
+    font-family: "Iceland", system-ui;
 }
 
 
@@ -13,6 +16,7 @@ body {
 }
 
 h1 {
+    font-family: "Nabla", system-ui;
     color: #000;
     background-color: #fff;
     padding: 0.5rem;
@@ -78,6 +82,7 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-weight: 800;
 }
 
 input[name="username"] {
