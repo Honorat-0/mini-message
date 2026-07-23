@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    background-image: url("/image_ac10c539.png");
+}
+
+h1 {
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(200px, 90vw, 500px);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.message {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 15px 15px 15px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: clamp(150px, 40vw, 400px);
+    background-color: #fff;
+}
+
+.username::before {
+    content: "@";
+}
+
+.username {
+    color: #00f;    
+}
+
+.username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 0.7rem;
+    color: rgb(0 0 0 / 0.5);
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-left: auto;
+}
+
+input[name="message"] {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    border: none;
+}
+
+button {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[name="username"] {
+    margin: 0.5rem 0;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+#allMessages {
+    flex: 1;
+    overflow-y: auto;
+}
+
+form {
+    margin-bottom: 1rem;
+}
